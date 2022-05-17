@@ -122,7 +122,6 @@ var menu5 = {
   width: 800,
 };
 
+// hasOwnProperty é um método de Object
 menu5.hasOwnProperty("width"); //true
 menu5.hasOwnProperty("height"); //false
-
-// hasOwnProperty é um método de Object
