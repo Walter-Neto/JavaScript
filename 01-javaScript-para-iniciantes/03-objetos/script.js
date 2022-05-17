@@ -123,5 +123,6 @@ var menu5 = {
 };
 
 // hasOwnProperty é um método de Object
+
 menu5.hasOwnProperty("width"); //true
 menu5.hasOwnProperty("height"); //false
