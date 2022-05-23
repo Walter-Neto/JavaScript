@@ -1,42 +1,29 @@
 /*
-  DOM - Document object model
-  É uma interface que representa documentos HTML e XML através de objetos. Com ela é possível manipular a estrutura, estilo e conteúdo destes documentos.
+  ID
+  getElementById seleciona e retorna elementos do DOM
 */
 
+// Seleciona pelo ID
+const animaisSection = document.getElementById('animais').innerText;
+console.log(animaisSection);
+const contatoSection = document.getElementById('contato').innerText;
+console.log(contatoSection);
 
-
-// window é o objeto global do browser, possui diferentes métodos e propriedades.
-console.log(window);
-console.log(window.innerHeight); // retorna a altura do browser
+// Retorna null caso não exista
+const naoExiste = document.getElementById('teste');
+console.log(naoExiste);
 
 /*
-  WINDOW E DOCUMENT
-  São os objetos principais do DOM, boa parte da manipulação é feita através dos seus métodos e propriedades.
-
-  Window é o objeto global, por isso não precisamos chamar ele na frente dos seus métodos e propriedades.
+  CLASSE E TAG
+  getElementsByClassName e getElementsByTagName selecionam e retornam uma lista de elementos do DOM. A lista retornada está ao vivo, significa que se elementos forem adicionados, ela será automaticamente atualizada.
 */
 
-window.alert('Isso é um alerta');
-alert('Isso é um alerta'); // Desse modo funciona pois o window é global.
+// Seleciona pela classe, retorna uma HTMLCollection
+const gridSection = document.getElementsByClassName('grid-section');
+const contato = document.getElementsByClassName('grid-section contato');
 
-document.querySelector('h1'); // Seleciona o primeiro h1
-document.body; // Retorna o body
+// Seleciona todas as UL's, retorna uma HTMLCollection
+const ul = document.getElementsByTagName('ul');
 
-/*
-  NODE
-
-*/
-
-const titulo = document.querySelector('h1');
-
-titulo.innerText; // retorna o texto;
-titulo.classList; // retorna as classes;
-titulo.id; // retorna o id;
-titulo.offsetHeight; // retorna a altura do elemento;
-
-function callback(){
-  console.log('Clicou em ', titulo.innerText);
-}
-
-titulo.addEventListener('click', callback);
-// ativa a função callback ao click no titulo
+// Retorna o primeiro elemento
+console.log(gridSection[0]);
