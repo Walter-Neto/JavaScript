@@ -21,7 +21,7 @@ body{
 }
 
 .menu{
-  grid-column: 1 / 5;
+  grid-column: 3 / 5;
   margin-top: 2rem;
   margin-bottom: 2rem;
   background-color: #fb5;
@@ -167,7 +167,7 @@ body{
 }
 
 .copy{
-  grid-column: 1 / 5;
+  grid-column: 3 / 5;
   margin-bottom: 2rem;
   background: #fb5;
 }
